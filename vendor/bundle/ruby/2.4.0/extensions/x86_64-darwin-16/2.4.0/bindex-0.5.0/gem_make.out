@@ -1,0 +1,15 @@
+current directory: /Users/Sam/Development/RSS/Reader/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+/Users/Sam/.rvm/rubies/ruby-2.4.2/bin/ruby -r ./siteconf20171118-77272-mpaxgs.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Sam/Development/RSS/Reader/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/Sam/Development/RSS/Reader/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/Sam/Development/RSS/Reader/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20171118-77272-m5r1en/bindex
