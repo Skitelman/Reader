@@ -15,6 +15,9 @@
 .idea/*
 /node_modules
 /yarn-error.log
+custom_plan.rb
+zeus.json
+vendor/bundle/*
 
 .byebug_history
 Gemfile.lock

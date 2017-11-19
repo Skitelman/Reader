@@ -1,11 +1,12 @@
 class EntryFetcher
+  attr_reader :feeds
 
   def initialize(feeds: [])
-    @feeds = feeds.empty? ? Feed.all : feeds
+    @feeds = feeds.empty? ? Feed.all.to_a : feeds
   end
 
   def call
-    @feeds.each do |feed|
+    feeds.each do |feed|
       raw_feed = Feedjira::Feed.fetch_and_parse(feed.url)
       raw_feed.entries.each do |raw_entry|
         entry = Entry.find_or_initialize_by(url: raw_entry.url, feed: feed)

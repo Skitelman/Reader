@@ -14,6 +14,7 @@ gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.21'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+gem 'rake', '12.3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -41,10 +42,12 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'feedjira'
 gem 'httparty'
-gem 'pry'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'rspec'
+  gem 'pry'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails', require: false
+  gem 'faker'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
@@ -58,6 +61,3 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
