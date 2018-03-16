@@ -21,3 +21,5 @@ vendor/bundle/*
 
 .byebug_history
 Gemfile.lock
+.ruby-version
+.notes

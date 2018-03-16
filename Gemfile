@@ -42,6 +42,9 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'feedjira'
 gem 'httparty'
+
+gem 'graphql'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry'
@@ -61,3 +64,5 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+gem 'graphiql-rails', group: :development
